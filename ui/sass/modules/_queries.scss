@@ -1,0 +1,30 @@
+/*
+Theme Name: Xoom's Soap
+Description: Project Queries
+Author: Maria Arocha
+*/
+
+@mixin query($size){
+    @if $size == pc{
+        @media screen and (min-width: $pc){ @content; }
+    //tablet-wide
+    }@else if $size == tablet-wide{
+        @media screen and (max-width: ($pc - 1)){ @content; }
+    //tablet-wide-only
+    }@else if $size == tablet-wide-only{
+        @media screen and (min-width: $tablet-large) and (max-width: ($pc -1)){ @content; }
+    //tablet-narrow
+    }@else if $size == tablet-narrow{
+        @media screen and (max-width: ($tablet-large - 1)){ @content; }
+    //tablet-narrow-only
+    }@else if $size == tablet-narrow-only{
+        @media screen and (min-width: $tablet-small) and (max-width: ($tablet-large - 1)){ @content; }
+    //mobile-wide
+    }@else if $size == mobile-wide{
+        @media screen and (max-width: ($tablet-small - 1)){ @content; }
+    }@else if $size == mobile-wide-only{
+        @media screen and (min-width: $mobile-large) and (max-width: ($tablet-small - 1)){ @content; }
+    }@else if $size == mobile-narrow{
+        @media screen and (max-width: ($mobile-large - 1)){ @content; }
+    }
+}

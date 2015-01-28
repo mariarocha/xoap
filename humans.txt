@@ -1,0 +1,6 @@
+
+Soap
+
+Soap's idea is to give the user the basic and simple tools to start building a website, without having to use a complicated framework.
+Soap is not perfect or complete yet, instead it will grow along the knowledge of the user, so feel free to add, change or remove content and make your experience of building a website easier than ever.
+

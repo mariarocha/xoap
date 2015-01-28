@@ -1,0 +1,36 @@
+/*
+Theme Name: Xoom's Soap
+Description: Project Variables
+Author: Maria Arocha
+*/
+
+// Grid variables
+$grid-columns: 12;
+$grid-max-width: 1040px;
+
+//Grid Breakpoints
+$breakpoint-small: "only screen and (min-width: 320px)";
+$breakpoint-medium: "only screen and (min-width: 480px)";
+
+//Devices' Size
+$mobile-small: 320px;
+$mobile-large: 480px;
+$tablet-small: 768px;
+$tablet-large: 960px;
+$pc: 1080px;
+
+//Base Font
+$font-family-base: "Arial", sans-serif;
+
+//Colors
+$color-white: #fff;
+$color-black: #000;
+$color-green:  #5ebd53;
+$color-blue:   #00a5d8; 
+$color-gray-1: #eeeff0;
+$color-gray-2: #8c8d8e;
+$color-gray-3: #3e3f44;
+
+//Fonts
+//FiraSans
+$FiraSans-Regular: 'FiraSans-Regular', 'Arial', sans-serif;

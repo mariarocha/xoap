@@ -1,0 +1,77 @@
+/*
+Theme Name: Xoom's Soap
+Description: Buttons 
+Author: Maria Arocha
+*/
+
+//import globals
+@import "modules/base";
+
+.blue-button{
+    padding:               10px 0;
+    width:                 100%;
+    font-size:             18px;
+    color:                 #fff;
+    border:                none;
+    display:               block;
+    text-align:            center;
+    font-family:           $font-family-base;
+    @include               border-radius(6px);
+    @include               background-image(linear-gradient(#00b8e0, #009ed5));
+    outline:               0;
+    color:                 #fff;
+    text-decoration:       none;
+    &:hover{
+        background:        #009fd5;
+    }
+}
+
+.border-button{
+    width:                   100%;
+    display:                 block;
+    padding:                 10px 0;
+    text-align:              center;
+    border:                  2px solid;
+    font-size:               18px;
+    font-family:             $font-family-base;
+    border-radius:           5px;
+    -webkit-border-radius:   5px;
+    -moz-border-radius:      5px;
+    &.green{
+        @extend .border-button;
+        border-color:       $color-green;
+        color:              $color-green;
+    }
+    &.blue{
+        @extend .border-button;
+        border-color: $color-blue;
+        color: $color-blue;     
+    }
+    &.gray{
+        @extend .border-button;
+        border-color: $color-gray-2;
+        color:  $color-gray-2;   
+        border-width: 1px;
+        font-size: 14px;
+        padding: 7px 0;
+    }
+}
+
+.gray-button{
+    padding:               10px 0;
+    width:                 100%;
+    font-size:             18px;
+    color:                 #fff;
+    border:                none;
+    display:               block;
+    text-align:            center;
+    font-family:           $font-family-base;
+    @include               background-image(linear-gradient(#b2b3b4, #999a9b));
+    @include               border-radius(6px);
+    outline:               0;
+    color:                 #fff;
+    text-decoration:       none;
+    &:hover{
+        background:        #999a9b;
+    }
+}
